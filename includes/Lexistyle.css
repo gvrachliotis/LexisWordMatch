@@ -25,6 +25,14 @@ body {
 	padding: 0;
 }
 
+.applogo {
+	width: auto;
+	height: 75px;
+	background: url(../images/wmtb.png) top no-repeat;
+	margin: auto;
+	padding: 0;	
+}
+
 .headerLine {
 	width: 100%;
 	height: 10px;
