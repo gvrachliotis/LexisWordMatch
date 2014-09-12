@@ -5,6 +5,7 @@
 <title>jQuery Mobile Web App</title>
 <link href="jquery.mobile-1.4.3.min.css" rel="stylesheet" type="text/css"/>
 <link href="includes/Lexistyle.css" rel="stylesheet" type="text/css" >
+<link href="includes/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css" >
 <script src="jquery-1.11.1.min.js" type="text/javascript"></script>
 <script src="jquery.mobile-1.4.3.min.js" type="text/javascript"></script>
 </head> 
@@ -15,9 +16,9 @@
 <div data-role="page" id="MainPage">
 
 	<!-- Main Page Header -->
-	<div class="header">
+	<div data-role="header" class="header">
 		<div class="logo"></div> 
-        <div class="headerLine"></div>
+		<div class="headerLine"></div>
 	</div>
     
     <!-- Main Page Content -->
@@ -39,9 +40,9 @@
 	</div>
     
     <!-- Main Page Footer -->
-	<div data-role="footer" class="footer">
+	<!--<div data-role="footer" class="footer">
 		<h4>Footer</h4>
-	</div>
+	</div>-->
     
 </div>
 
@@ -63,7 +64,7 @@
     
     <!-- StartTest Page Footer -->
 	<div data-role="footer" class="footer">
-    	<h4><a href="#MainPage" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
+    	<h4><a onclick="history.back();" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
 	</div>
     
 </div>
@@ -86,7 +87,7 @@
     
     <!-- Settings Page Footer -->
 	<div data-role="footer" class="footer">
-    	<h4><a href="#MainPage" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
+    	<h4><a onclick="history.back();" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
 	</div>
     
 </div>
@@ -103,15 +104,111 @@
     
     <!-- Info Page Content -->
 	<div data-role="content">	
-		Content		
+		<h4>Σχετικά με την εφαρμογή</h4>
+        <p><strong>Έκδοση: 1.0.0</strong></p>
+        <p>Η εφαρμογή <strong>Word Match</strong> αναπτύχθηκε από την επιστημονική ομάδα της <strong>Λέξις Speech Therapy Software</strong></p>
+        
+        <ul data-role="listview" data-inset="true" class="teammenu">
+            <li data-role="list-divider">Επιστημονική Ομάδα</li>
+            <li><a href="#Manos">
+                <img src="images/thumbs/Manos.png" />
+                <h2>Ανυφαντής Μάνος, MSc</h2>
+                <p>Λογοθεραπευτής</p></a></li>
+            <li><a href="#George">
+           		<img src="images/thumbs/George.png" />
+                <h2>Βραχλιώτης Γιώργος, MSc</h2>
+                <p>Αναλυτής Συστημάτων, Προγραμματιστής</p></a></li>
+        </ul>
+		
 	</div>
     
     <!-- Info Page Footer -->
 	<div data-role="footer" class="footer">
-    	<h4><a href="#MainPage" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
+    	<h4><a onclick="history.back();" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
 	</div>
     
 </div>
+
+<!-- MANOS PAGE -->
+
+<div data-role="page" id="Manos">
+	
+    <!-- Manos Page Header -->
+	<div class="header">
+		<div class="logo"></div> 
+        <div class="headerLine"></div>
+	</div>
+    
+    <!-- Manos Page Content -->
+	<div data-role="content">	                       
+        <table>
+        <tbody>
+        <tr>
+        <td><img src="images/thumbs/Manos.png"/></td>
+        <td>
+            <h3>Ανυφαντής Μάνος, MSC</h3>
+            <p>Λογοθεραπευτής, Απόφοιτος University of Pittsburgh</p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <!--<h4>Βιογραφικό Σημείωμα</h4>
+        <p></p>-->
+        <h4>Στοιχεία Επικοινωνίας</h4>        
+        <p>
+        <span class="icon-phone">&nbsp;</span>(+30) 26610 xxxxx, 
+        <span class="icon-mobile-phone">&nbsp;</span>(+30) 69xx xxxxxx, 
+        <span class="icon-envelope">&nbsp;</span> manos@xxxxxxx.gr
+        </p>        	            
+    </div>
+    
+    <!-- Manos Page Footer -->
+	<div data-role="footer" class="footer">
+    	<h4><a onclick="history.back();" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
+	</div>
+    
+</div>
+
+<!-- GEORGE PAGE -->
+
+<div data-role="page" id="George">
+	
+    <!-- George Page Header -->
+	<div class="header">
+		<div class="logo"></div> 
+        <div class="headerLine"></div>
+	</div>
+    
+    <!-- George Page Content -->
+	<div data-role="content">	
+        <table>
+        <tbody>
+        <tr>
+        <td><img src="images/thumbs/George.png"/></td>
+        <td>
+            <h3>Βραχλιώτης Γιώργος, MSC</h3>
+            <p>Αναλυτής Συστημάτων / Προγραμματιστής, Απόφοιτος University of Wales, Swansea</p>
+        </td>
+        </tr>
+        </tbody>
+        </table>
+        <!--<h4>Βιογραφικό Σημείωμα</h4>
+        <p></p>-->
+        <h4>Στοιχεία Επικοινωνίας</h4>        
+        <p>
+        <span class="icon-phone">&nbsp;</span>(+30) 26610 xxxxx, 
+        <span class="icon-mobile-phone">&nbsp;</span>(+30) 69xx xxxxxx, 
+        <span class="icon-envelope">&nbsp;</span> george@xxxxxxx.gr
+        </p>        	            		
+	</div>
+    
+    <!-- George Page Footer -->
+	<div data-role="footer" class="footer">
+    	<h4><a onclick="history.back();" data-role="button" data-icon="back" data-iconpos= "notext">Back</a></h4>		
+	</div>
+    
+</div>
+
 
 </body>
 </html>
